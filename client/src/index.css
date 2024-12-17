@@ -1,0 +1,44 @@
+/* CSS Reset */
+:root{
+    --mainColor: rgb(124, 110, 64);
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 300vh;
+    font-family: sans-serif;
+    overflow: scroll;
+    scrollbar-width: none;
+    background-color: var(--mainColor);
+    /* You can specify your desired font here */
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Edge */
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+}

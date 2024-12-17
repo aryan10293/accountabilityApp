@@ -1,0 +1,75 @@
+:root {
+    --mainColor: rgb(124, 110, 64);
+    --fontcolor: rgb(140,148,166);
+    --font-size: 16px;
+    --buttonColor: rgb(147, 123, 45);
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 3rem;
+    height: 80vh;
+    background-color: var(--mainColor);
+}
+.hero-section h1, .hero-section p, .hero-section a{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.hero-section h1{
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+.hero-section p{
+    color: white;
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+}
+.hero-section a{
+    color: white;
+    border: solid 1px transparent;
+/* fix border on thr link buttons */
+    padding: 1rem;
+    width: 100%;
+    border-radius: 3%;
+    font-size: 1.25rem;
+}
+.img-container{
+    width: 100%;
+}
+.login{
+   background-color: rgb(110,124,64); 
+}
+.create{
+    background-color: var(--buttonColor);
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    padding: 1rem;
+}
+.links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 640px) {
+    .hero-section {
+        max-width: 50%;
+        margin: auto;
+    }
+    .links{
+        flex-direction: row;
+    }
+    .links a{
+        margin-right: 1rem;
+        font-size: 1rem;
+        padding: .8rem;
+    }
+}
+
