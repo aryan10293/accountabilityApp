@@ -34,7 +34,14 @@ function Register() {
         })
 
         const accountCreated = await register.json()
+        if(accountCreated.username){
+            alert('account was sucessfully created please login')
+            window.location.href = '/login'
+        }
         console.log(accountCreated)
+
+        // add soemthing to redirect user to login or 
+        // save token to localhost and redirect user to feed
     }
   return (
     <>
