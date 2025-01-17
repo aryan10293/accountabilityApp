@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/nav.css'
-function NavLinks(props:any) {
+function NavLinks(props: any) {
   console.log(props)
   return (
-    <button  className={`nav-button ${props.heading}`}>
-      <Link to={`/${props.heading}`}>{props.heading}</Link>
-    </button>
+    <li className={`nav-button ${props.heading}`}>
+      <Link className='off-screen-list-item' to={`/${props.heading.split(' ').join('').toLowerCase()}`}>{props.heading}</Link>
+    </li>
   )
 }
 
